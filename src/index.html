@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Fun with Flags</title>
+  </head>
+  <body class="dark:bg-[#1A202C]">
+    <header class="bg-[#EDF2F7] dark:bg-[#171923] h-16 p-4 flex items-center">
+      <nav class="flex justify-between w-screen items-center">
+        <p class="dark:text-white">Where in the world?</p>
+        <button
+          class="dark-mode dark:bg-[#292B34] hover:bg-[#E2E8F0] dark:hover:bg-[#3C3E46] dark:text-white rounded p-4 w-12 text-slate-950 flex justify-center"
+        >
+          <svg viewBox="0 0 24 24" focusable="false" class="">
+            <path
+              fill="currentColor"
+              d="M21.4,13.7C20.6,13.9,19.8,14,19,14c-5,0-9-4-9-9c0-0.8,0.1-1.6,0.3-2.4c0.1-0.3,0-0.7-0.3-1 c-0.3-0.3-0.6-0.4-1-0.3C4.3,2.7,1,7.1,1,12c0,6.1,4.9,11,11,11c4.9,0,9.3-3.3,10.6-8.1c0.1-0.3,0-0.7-0.3-1 C22.1,13.7,21.7,13.6,21.4,13.7z"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <div class="flex justify-between py-5 px-20">
+      <div class="flex border p-2 rounded gap-2 group focus:border-cyan-600">
+        <svg viewBox="0 0 24 24" focusable="false" class="w-4 text-slate-300">
+          <path
+            fill="currentColor"
+            d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
+          ></path>
+        </svg>
+        <input
+          id="search-input"
+          class="focus:outline-none dark:bg-[#1A202C]"
+          type="text"
+          placeholder="Search for a country"
+        />
+      </div>
+      <select
+        class="border rounded dark:bg-[#1A202C] dark:text-white px-4"
+        name="select"
+        id=""
+      >
+        <option value="select">Select option</option>
+        <option value="all">All</option>
+        <option value="africa">Africa</option>
+        <option value="americas">Americas</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="oceania">Oceania</option>
+      </select>
+    </div>
+
+    <section class="pt-10"></section>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
